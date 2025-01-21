@@ -9,17 +9,18 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  background-color: #000000;
+  background-color: red;
   color: white;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: clamp(20px, 4vw, 40px);
   margin-left: clamp(20px, 8vw, 100px);
   margin-right: clamp(20px, 8vw, 100px);
-  overflow: hidden;
+  overflow-x: hidden;
   border: 0.001px solid white;
+  padding-bottom: 1000px;
   position: relative;
 }
 
@@ -244,7 +245,7 @@ header {
 
   .social-icons {
       bottom: 40px;
-      right: 60px;
+      right: 50px;
       gap: 20px;
   }
 
@@ -830,8 +831,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Media Queries */
-/* Media Queries */
 @media screen and (max-width: 768px) {
   body {
       margin: 20px;
@@ -848,7 +847,7 @@ a:hover {
   }
 
   .social-icons {
-      right: 20px;
+      right: 10px;
       bottom: 20px;
       gap: 15px;
   }
@@ -885,9 +884,19 @@ a:hover {
       font-size: 1rem;
   }
 
+  .about.social-icons {
+    bottom: 10px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .skills.social-icons{
+    display: none;
+  }
+
   .social-icons {
       gap: 10px;
-      right: 10px;
+      right: 30px;
       bottom: 10px;
   }
 
